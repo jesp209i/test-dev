@@ -1,10 +1,17 @@
 {
   "Deploy": {
     "Project": {
-      "Name": "cicd to all environments",
+      "Name": "Cicd to all environments",
       "Alias": "cicd-to-all-environments",
       "Id": "a748c4e6-b292-4e79-bd82-d773a427c222",
+      "Url": "https://www.s1.umbraco.io/project/cicd-to-all-environments",
       "Workspaces": [
+        {
+          "Id": "c950f5ef-6564-4ca0-81b0-13510e37ca98",
+          "Name": "awesome dev",
+          "Type": "awesome-dev",
+          "Url": "https://awesome-dev-cicd-to-all-environments.euwest01.rainbowsrock.net"
+        },
         {
           "Id": "59528dcf-5a80-467c-95f5-5ee3923df4e5",
           "Name": "Live",
