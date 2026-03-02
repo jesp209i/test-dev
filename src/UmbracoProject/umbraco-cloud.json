@@ -1,7 +1,17 @@
 {
   "Deploy": {
     "Project": {
-      "Workspaces": []
+      "Name": "cicd to all environments",
+      "Alias": "cicd-to-all-environments",
+      "Id": "a748c4e6-b292-4e79-bd82-d773a427c222",
+      "Workspaces": [
+        {
+          "Id": "59528dcf-5a80-467c-95f5-5ee3923df4e5",
+          "Name": "Live",
+          "Type": "live",
+          "Url": "https://cicd-to-all-environments.euwest01.rainbowsrock.net"
+        }
+      ]
     },
     "Settings": {}
   },
