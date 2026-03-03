@@ -10,9 +10,21 @@
   },
   "CompositionContentTypes": [],
   "PropertyGroups": [],
-  "PropertyTypes": [],
+  "PropertyTypes": [
+    {
+      "Key": "999dfa7a-e02c-47e8-a5f9-3f534b223628",
+      "Alias": "title",
+      "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Name": "title"
+    }
+  ],
   "Udi": "umb://document-type/2e782f59696d4a999cba3df1437e91ca",
-  "Dependencies": [],
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    }
+  ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
   "__version": "17.0.1"
 }
