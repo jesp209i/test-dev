@@ -1,0 +1,30 @@
+{
+  "Name": "extract me",
+  "Alias": "extractMe",
+  "AllowedTemplates": [],
+  "HistoryCleanup": {},
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "AllowedChildContentTypes": []
+  },
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [
+    {
+      "Key": "e5823f49-6513-4e61-9a5c-77c6ad0bf16b",
+      "Alias": "hest",
+      "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+      "Name": "hest"
+    }
+  ],
+  "Udi": "umb://document-type/4a4c1000d62842c19d2297d987f44e9e",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "17.0.1"
+}
