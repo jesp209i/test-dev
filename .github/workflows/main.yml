@@ -41,9 +41,29 @@ jobs:
     with:
       artifactId: ${{ needs.cloud-artifact.outputs.artifactId }}
       targetEnvironmentAlias: ${{ vars.TARGET_ENVIRONMENT_ALIAS }}
-      noBuildAndRestore: "false"
-      skipVersionCheck: "false"
-      skipPreserveUmbracoCloudJson: "false"
+      noBuildAndRestore: "true"
+      skipVersionCheck: "true"
+      skipPreserveUmbracoCloudJson: "true"
+      runSchemaExtraction: "true"
+    secrets:
+      projectId: ${{ secrets.PROJECT_ID }}
+      umbracoCloudApiKey: ${{ secrets.UMBRACO_CLOUD_API_KEY }}
+
+  # Deploy to Umbraco Cloud
+  # ####
+  # you can edit the variables noBuildAndRestore, skipVersionCheck, skipPreserveUmbracoCloudJson, 
+  # and runSchemaExtraction
+  # use booleans but as strings
+  cloud-deployment2:
+    name: "Deploy to Cloud LIVE"
+    needs: cloud-artifact
+    uses: ./.github/workflows/cloud-deployment.yml
+    with:
+      artifactId: ${{ needs.cloud-artifact.outputs.artifactId }}
+      targetEnvironmentAlias: "live"
+      noBuildAndRestore: "true"
+      skipVersionCheck: "true"
+      skipPreserveUmbracoCloudJson: "true"
       runSchemaExtraction: "true"
     secrets:
       projectId: ${{ secrets.PROJECT_ID }}
