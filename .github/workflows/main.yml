@@ -64,7 +64,7 @@ jobs:
       noBuildAndRestore: "true"
       skipVersionCheck: "true"
       skipPreserveUmbracoCloudJson: "true"
-      runSchemaExtraction: "false"
+      runSchemaExtraction: "true"
     secrets:
       projectId: ${{ secrets.PROJECT_ID }}
       umbracoCloudApiKey: ${{ secrets.UMBRACO_CLOUD_API_KEY }}
