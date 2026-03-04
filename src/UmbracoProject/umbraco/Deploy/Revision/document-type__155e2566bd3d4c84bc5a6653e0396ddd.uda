@@ -1,0 +1,30 @@
+{
+  "Name": "New docs type yes",
+  "Alias": "newDocsTypeYes",
+  "AllowedTemplates": [],
+  "HistoryCleanup": {},
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "AllowedChildContentTypes": []
+  },
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [
+    {
+      "Key": "91fb8047-8590-427a-ab3f-2e78f1b6a1ab",
+      "Alias": "title",
+      "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Name": "title"
+    }
+  ],
+  "Udi": "umb://document-type/155e2566bd3d4c84bc5a6653e0396ddd",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "17.0.1"
+}
